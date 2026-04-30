@@ -13,76 +13,56 @@
 
 #show: project.with(
   theme: rgb("#0F83C0"),
-  name: "Harnoor Singh",
+  name: "FERDOUS MAHMUD AKASH",
   contact: (
-    contact(
-      text: "LinkedIn://iharnoor",
-      link: "https://www.linkedin.com/in/iharnoor"
-    ),
-    contact(
-      text: "Github://iharnoor",
-      link: "https://www.github.com/iharnoor"
-    ),
-    contact(
-      text: "singhinusa.dev",
-      link: "https://singhinusa.dev"
-    ),
-    contact(
-      text: "email@example.com",
-      link: "mailto:email@example.com"
-    )
+    contact(text: "iOS Developer"),
+    contact(text: "ferdous.webdev@gmail.com", link: "mailto:ferdous.webdev@gmail.com"),
+    contact(text: "(+88) 01401678150", link: "tel:+8801401678150"),
+    contact(text: "ferdousmahmud.co", link: "https://ferdousmahmud.co"),
+    contact(text: "github.com/ferdous19", link: "https://github.com/ferdous19"),
+    contact(text: "linkedin.com/in/ferdous-mahmud", link: "https://www.linkedin.com/in/ferdous-mahmud")
   ),
   main: (
     section(
       title: "Experience",
       content: (
         subSection(
-          title: "Microsoft Corp.",
-          titleEnd: "Atlanta, GA",
-          subTitle: "Software Engineer",
-          subTitleEnd: "(July 2022 – April 2025)",
-          content: [
-            *AI / Applied ML (Microsoft Security)*
-            #list(
-              [Architected and implemented *AI-driven query translation (NL2KQL)* using *Vector Databases and Retrieval-Augmented Generation (RAG)* pipelines, enabling natural-language security analytics over structured telemetry.],
-              [Owned the *end-to-end design, implementation, and validation* of AI-enhanced workflows, partnering with security engineers and PMs to ensure *correctness, scalability, and production readiness*.],
-              [Led experimentation and *prompt optimization strategies* to improve query accuracy and system reliability in production security environments.],
-              [*Technologies:* LLM-based APIs, RAG Pipelines, Vector Databases, NL2KQL, Security Analytics]
-            )
-            *Mobile Engineering / Platform (Microsoft Defender)*
-            #list(
-              [Led the design and development of *end-to-end native test frameworks* for Microsoft Defender *Android and iOS*, *doubling release velocity (2× faster)* while improving regression coverage and reliability.],
-              [Built and maintained *native mobile testing infrastructure*, enabling faster iteration cycles and reducing production regressions across multiple Defender releases.],
-              [Collaborated with cross-platform mobile teams to integrate testing pipelines into CI/CD workflows.],
-              [*Technologies:* Android, iOS, Native Testing Frameworks, Automated Testing, CI/CD]
-            )
-            *Cross-Functional / Developer Advocacy*
-            #list(
-              [Partnered with the *Microsoft Designer* team as a creative collaborator, contributing to *go-to-market strategy* and producing technical marketing content, for my YouTube channel Singh in USA (*1M+ subscribers*).]
-            )
-          ],
-        ),
-        subSection(
-          title: "NCR (National Cash Register)",
-          titleEnd: "Atlanta, GA",
-          subTitle: "Software Engineer",
-          subTitleEnd: "(July 2020 – July 2022)",
+          title: "Appstick",
+          titleEnd: "Khulna, Bangladesh",
+          subTitle: "Software Engineer (iOS)",
+          subTitleEnd: "(Sep 2023 – Current)",
           content: list(
-            [Contributed to NCR Silver POS Android application, working within a *1M+ LOC* codebase spanning *19 modules* and serving hundreds of thousands of global users.],
-            [Served as *Atlanta team lead and Scrum Master*, coordinating execution for *11 engineers and QA members*, driving sprint planning, delivery, and cross-team alignment.],
-            [Engineered production features using *Dagger2, RxJava, Kotlin Multiplatform, and C++*, including cross-platform shared libraries for business-critical workflows.],
-            [Designed and implemented instrumentation and unit testing frameworks using *Espresso, Mockito, and JUnit*, improving stability and reducing post-release defects.],
-            [Acted as a technical interviewer and campus recruiter, representing NCR at university engineering fairs and contributing to intern hiring pipelines.],
-            [*Technologies:* Android, Kotlin, RxJava, Dagger2, C++, Espresso, Mockito, JUnit]
+            [Optimized an iOS ride-sharing app using Swift Concurrency and MapKit with real-time tracking via Socket.io, reducing memory usage by *40%* through efficient caching and thread management.],
+            [Integrated on-device LLM capabilities using Apple's foundation models for dynamic ride-screen text generation and personalized user experiences.],
+            [Built WidgetKit extensions and Live Activities for real-time ride tracking across Home Screen, Lock Screen, and Dynamic Island.],
+            [Led feature development, conducted code reviews, and mentored junior developers on iOS best practices.],
+            [Automated deployments using Fastlane-based CI/CD, reducing release time by *60%* and helping drive *70%* test coverage with SOLID-first engineering practices.]
+          ),
+        ),
+      ),
+    ),
+    section(
+      title: "Projects",
+      content: (
+        subSection(
+          title: "Msar Amen",
+          subTitle: "Swift, SwiftUI, Combine, MapKit, Socket.io, Firebase",
+          subTitleEnd: "(Feb 2024 – Current)",
+          content: list(
+            [Led iOS architecture for a Saudi Arabia ride-sharing platform, implementing MVVM with Combine for reactive data flow and async/await for concurrent operations.],
+            [Built real-time MapKit driver tracking via Socket.io, including route optimization and geofencing with CoreLocation.],
+            [Integrated MyFatoorah payment SDK and Firebase/APNS push notifications for seamless transactions and engagement.]
           ),
         ),
         subSection(
-          title: "Panasonic Automotive",
-          titleEnd: "Peachtree City, GA",
-          subTitle: "Systems Engineering Intern",
-          subTitleEnd: "(May 2017 – May 2018)",
+          title: "Kotha",
+          subTitle: "Swift, SwiftUI, Combine, WebRTC, Firebase",
+          subTitleEnd: "(2024 – 2025)",
           content: list(
-            [Built an Android-based infotainment simulation app replicating Panasonic's in-car entertainment system, reducing developer onboarding and use-case understanding time by ~2×.]
+            [Contributed to Bangladesh's leading homegrown social media and marketplace platform used by millions across web and mobile.],
+            [Built TikTok-style short video feeds with AVFoundation and integrated FFMPEG for audio processing, background noise removal, and voice posts.],
+            [Implemented real-time chat with backup, voice/video calling via WebRTC, and background-task support for offline scenarios.],
+            [Integrated secure bKash payment for digital commerce with MVVM and Combine architecture.] 
           ),
         ),
       ),
@@ -91,18 +71,58 @@
       title: "Education",
       content: (
         subSection(
-          title: "Georgia State University",
-          titleEnd: "Atlanta, GA",
-          subTitle: "BS & MS in Computer Science",
-          subTitleEnd: "(2016 – 2020)",
+          title: "Northern University of Business & Technology Khulna",
+          subTitle: "Bachelor's degree in Computer Science & Engineering",
+          subTitleEnd: "(Sep 2019 – Dec 2023)",
+          content: [*CGPA:* 3.59 out of 4],
+        ),
+      ),
+    ),
+    section(
+      title: "Skills",
+      content: (
+        subSection(
+          title: "Technical",
           content: [
-            *summa cum laude* | GPA: 4.0\
-            President's List, Honors College
+            *Core iOS:* Swift, SwiftUI, UIKit, Xcode, CocoaPods, SPM\
+            *Architecture & Patterns:* Async/Await, Combine, MVVM, MVC, SOLID\
+            *AI/ML:* CoreML, On-device LLM, Apple Intelligence, Natural Language\
+            *Networking & Data:* REST API, URLSession, Alamofire, CoreData, SwiftData, Firebase\
+            *Quality & Delivery:* XCTest, Unit Testing, Git/GitHub, Fastlane, CI/CD
           ],
+        ),
+      ),
+    ),
+    section(
+      title: "Achievements",
+      content: (
+        subSection(
+          title: "Highlights",
+          content: list(
+            [1st Place - NUBTK Programming Contest],
+            [ACM ICPC Dhaka Qualifying Round 2022],
+            [Published *50+* iOS technical articles on AppsDeveloperBlog for a global audience],
+            [Solved *250+* algorithmic problems on LeetCode and Codeforces],
+            [Built a *2000+* LinkedIn following by sharing iOS development insights],
+            [Reached *3000+* monthly visitors on an iOS development blog],
+            [Event Head - NUBTK CSE Fest 2022]
+          ),
+        ),
+      ),
+    ),
+    section(
+      title: "Certification",
+      content: (
+        subSection(
+          title: "Professional Development",
+          content: list(
+            [Meta iOS Developer Professional Certificate - Coursera],
+            [SwiftUI Advanced Architecture - Swiftful Thinking],
+            [Intro to Linux Shell Scripting - Udemy]
+          ),
         ),
       ),
     )
   ),
   sidebar: (),
 )
-
