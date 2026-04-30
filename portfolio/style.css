@@ -1019,8 +1019,11 @@ h2 {
 }
 
 .contact-card p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: 'Space Mono', monospace;
+    word-break: break-word;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .card-linkedin {
@@ -1038,6 +1041,11 @@ h2 {
 .card-youtube {
     background: var(--color-accent);
     color: white;
+}
+
+.card-website {
+    background: var(--color-yellow);
+    color: #000;
 }
 
 /* ============================
