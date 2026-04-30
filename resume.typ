@@ -18,7 +18,7 @@
     contact(text: "iOS Developer"),
     contact(text: "ferdous.webdev@gmail.com", link: "mailto:ferdous.webdev@gmail.com"),
     contact(text: "(+88) 01401678150", link: "tel:+8801401678150"),
-    contact(text: "ferdousmahmud.co", link: "https://ferdousmahmud.co"),
+    contact(text: "ferdous-mahmud.github.io", link: "https://ferdous-mahmud.github.io"),
     contact(text: "github.com/ferdous19", link: "https://github.com/ferdous19"),
     contact(text: "linkedin.com/in/ferdous-mahmud", link: "https://www.linkedin.com/in/ferdous-mahmud")
   ),
