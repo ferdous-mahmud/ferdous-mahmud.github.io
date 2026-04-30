@@ -6,12 +6,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
-    - name: "Setup env"
-      uses: JRMurr/direnv-nix-action@v4.1.0
+    - name: install typst
+      run: |
+        set -euo pipefail
+        TYPST_VERSION="0.13.1"
+        curl -fsSL -o typst.tar.xz "https://github.com/typst/typst/releases/download/v${TYPST_VERSION}/typst-x86_64-unknown-linux-musl.tar.xz"
+        tar -xf typst.tar.xz
+        echo "$PWD/typst-x86_64-unknown-linux-musl" >> "$GITHUB_PATH"
+      shell: bash
 
-    - name: use typst
+    - name: check typst
       run: typst --version
       shell: bash
 
