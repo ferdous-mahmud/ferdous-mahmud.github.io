@@ -1,7 +1,17 @@
-This is an Attractive Resume Template built with Typst, an open source Latex alternative written in Rust, and compiles to PDF.
+This is an attractive resume template built with Typst, an open source LaTeX alternative written in Rust, that compiles to PDF.
 
-To compile it to pdf, make sure typst is installed. The provided flake.nix and .envrc is useful if you have nix and direnv installed. This template using the Mulish Google Font and is provided in the `assets/fonts` directory.
+To compile it to PDF, make sure `typst` is installed. The provided `flake.nix` and `.envrc` are useful if you have Nix and direnv installed. This template uses the Mulish font files in `assets/fonts`.
 
-Preview:\
-<img src="assets/images/attractive-typst-resume-blue.png?v=4" width="400px" />
-<img src="assets/images/attractive-typst-resume-green.png?v=4" width="400px" />
+## Build Instructions
+
+From the project root, run:
+
+```bash
+./build.sh
+```
+
+Or run Typst directly:
+
+```bash
+typst compile --font-path ./assets/fonts resume.typ resume.pdf
+```
