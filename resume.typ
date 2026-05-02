@@ -35,7 +35,7 @@
       title: "Experience",
       content: (
         subSection(
-          title: "FileSure",
+          title: link("https://www.filesure.in/", [FileSure]),
           titleEnd: "Dhaka, Bangladesh",
           subTitle: "iOS Developer",
           subTitleEnd: "(Sep 2025 – Current)",
@@ -48,7 +48,7 @@
           ),
         ),
         subSection(
-          title: "Appstick",
+          title: link("https://appstick.com.bd/", [Appstick]),
           titleEnd: "Khulna, Bangladesh",
           subTitle: "Software Engineer (iOS)",
           subTitleEnd: "(Sep 2023 – Aug 2025)",
