@@ -13,6 +13,7 @@
 #let project(
   theme: rgb("#4273B0"),
   name: "",
+  photo: none,
   email: none,
   title: none,
   contact: ((text: [], link: "")),
@@ -48,10 +49,34 @@
     ]
   }).join(" • ")
 
-  align(center)[
-    #formattedName
-    #contactLine
-  ]
+  if photo != none {
+    grid(
+      columns: (1fr, auto),
+      column-gutter: 10pt,
+      align: horizon,
+      // Left: name + contact
+      [
+        #formattedName
+        #contactLine
+      ],
+      // Right: circular photo with themed border ring
+      box(
+        stroke: 2.5pt + theme,
+        radius: 50%,
+        clip: true,
+        width: 72pt,
+        height: 72pt,
+        image(photo, width: 72pt, height: 72pt, fit: "cover"),
+      ),
+    )
+    line(length: 100%, stroke: 1.5pt + theme)
+  } else {
+    align(center)[
+      #formattedName
+      #contactLine
+    ]
+    line(length: 100%, stroke: 1.5pt + theme)
+  }
   
   set par(justify: true)
 
