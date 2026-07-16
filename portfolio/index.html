@@ -7,7 +7,7 @@
     <meta name="description" content="iOS Engineer specialized in Swift, SwiftUI, on-device LLM, and scalable mobile architecture. Building high-performance products at FileSure, previously Appstick.">
     <meta name="keywords" content="Ferdous Mahmud Akash, iOS Developer, iOS Engineer, Swift, SwiftUI, UIKit, Apple Intelligence, CoreML, FileSure, Appstick">
     <meta name="author" content="Ferdous Mahmud Akash">
-    <meta name="theme-color" content="#0f172a">
+    <meta name="theme-color" content="#0b1020">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ferdous-mahmud.github.io/">
@@ -37,227 +37,267 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="spotlight" aria-hidden="true"></div>
+    <div class="bg-glow" aria-hidden="true"></div>
 
-    <div class="layout">
+    <!-- ============ NAV ============ -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a class="nav-logo" href="#top" aria-label="Home">FM<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+            <a class="nav-cta" href="mailto:ferdous.webdev@gmail.com">Get in touch</a>
+        </div>
+    </nav>
 
-        <!-- ============ LEFT / STICKY HEADER ============ -->
-        <header class="side">
-            <div>
-                <div class="identity">
-                    <img src="profile.jpg" alt="Ferdous Mahmud Akash" class="avatar">
-                    <h1><a href="/">Ferdous Mahmud Akash</a></h1>
-                    <h2>iOS Engineer</h2>
-                    <p class="tagline">I build fast, reliable iOS apps with Swift, SwiftUI, real-time systems, and on-device AI.</p>
-                    <div class="availability">
-                        <span class="pulse-dot" aria-hidden="true"></span>
-                        Open to iOS opportunities
-                    </div>
-                </div>
+    <main id="top">
 
-                <nav class="side-nav" aria-label="In-page navigation">
-                    <ul>
-                        <li><a class="nav-link active" href="#about"><span class="nav-indicator"></span><span class="nav-text">About</span></a></li>
-                        <li><a class="nav-link" href="#experience"><span class="nav-indicator"></span><span class="nav-text">Experience</span></a></li>
-                        <li><a class="nav-link" href="#projects"><span class="nav-indicator"></span><span class="nav-text">Projects</span></a></li>
-                        <li><a class="nav-link" href="#skills"><span class="nav-indicator"></span><span class="nav-text">Skills</span></a></li>
-                        <li><a class="nav-link" href="#more"><span class="nav-indicator"></span><span class="nav-text">Beyond Code</span></a></li>
-                    </ul>
-                </nav>
+        <!-- ============ HERO ============ -->
+        <header class="hero">
+            <div class="avatar-ring">
+                <img src="profile.jpg" alt="Ferdous Mahmud Akash" class="avatar">
+            </div>
+            <div class="availability">
+                <span class="pulse-dot" aria-hidden="true"></span>
+                Open to iOS opportunities
+            </div>
+            <h1>Ferdous Mahmud <span class="grad">Akash</span></h1>
+            <p class="hero-sub">iOS Engineer crafting fast, reliable apps with <strong>Swift</strong>, <strong>SwiftUI</strong> &amp; <strong>on-device AI</strong> — shipped to users across Saudi Arabia and Bangladesh.</p>
+            <div class="hero-actions">
+                <a class="btn btn-solid" href="#projects">See my work</a>
+                <a class="btn btn-ghost" href="https://github.com/ferdous19" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                    GitHub
+                </a>
+                <a class="btn btn-ghost" href="https://www.linkedin.com/in/ferdous19" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+                    LinkedIn
+                </a>
             </div>
 
-            <div class="side-footer">
-                <ul class="socials" aria-label="Social links">
-                    <li>
-                        <a href="https://github.com/ferdous19" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
-                            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/ferdous19" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
-                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"/></svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:ferdous.webdev@gmail.com" aria-label="Email" title="Email">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
-                        </a>
-                    </li>
-                </ul>
+            <div class="stats-band">
+                <div class="stat">
+                    <span class="stat-number">2+</span>
+                    <span class="stat-label">years shipping iOS</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">apps on the App Store</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">iOS articles published</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">3000+</span>
+                    <span class="stat-label">monthly blog readers</span>
+                </div>
             </div>
         </header>
 
-        <!-- ============ RIGHT / SCROLLING CONTENT ============ -->
-        <main class="content">
+        <!-- ============ EXPERIENCE ============ -->
+        <section id="experience" class="section">
+            <div class="section-head">
+                <span class="section-kicker">Career</span>
+                <h2>Experience</h2>
+            </div>
 
-            <section id="about" class="panel" aria-label="About me">
-                <h3 class="mobile-heading">About</h3>
-                <p>I'm an iOS engineer who cares about the details that make apps feel effortless — smooth scrolling, instant search, downloads that survive a lost connection. Over the past <strong>2+ years</strong> I've shipped production apps used across <strong>Saudi Arabia and Bangladesh</strong>, spanning ride-sharing, social media, and enterprise document management.</p>
-                <p>Currently I'm building the <a href="https://apps.apple.com/in/app/filesure/id6759514259" target="_blank" rel="noopener noreferrer">FileSure iOS app</a>, where I architected the app from scratch with SwiftUI, MVVM, and Combine — including a custom PDFKit reader and a background download engine that cut failed-download complaints to near zero. Before that, at <a href="https://appstick.com.bd/" target="_blank" rel="noopener noreferrer">Appstick</a>, I optimized a ride-sharing platform's memory usage by 40% and integrated on-device LLMs with Apple's foundation models.</p>
-                <p>Outside of shipping features, I've published <strong>50+ iOS articles</strong> read by 3000+ developers monthly, solved 250+ algorithmic problems, and mentored junior engineers on architecture and code quality.</p>
-            </section>
-
-            <section id="experience" class="panel" aria-label="Work experience">
-                <h3 class="mobile-heading">Experience</h3>
-                <ol class="card-list">
-                    <li>
-                        <a class="card" href="https://www.filesure.in/" target="_blank" rel="noopener noreferrer">
-                            <span class="card-when">Sep 2025 — Present</span>
-                            <div class="card-body">
-                                <h4>iOS Developer · FileSure <span class="ext-arrow" aria-hidden="true">↗</span></h4>
-                                <p class="card-loc">Dhaka, Bangladesh</p>
-                                <p>Architected and shipped the FileSure document-management app from scratch with SwiftUI, UIKit, MVVM, and Combine. Built a custom PDF reader with annotations and optimized memory for large enterprise documents, plus a background download engine with concurrent multi-file downloads, pause/resume, and automatic retry.</p>
-                                <ul class="highlights">
-                                    <li>Cut API calls by 50% and bandwidth by 35% via caching, compression, pagination, and debounced search</li>
-                                    <li>Reduced failed-download complaints to near zero</li>
-                                    <li>Integrated Razorpay with receipt validation and secure transaction flow</li>
-                                </ul>
-                                <ul class="pill-list" aria-label="Technologies used">
-                                    <li>Swift</li><li>SwiftUI</li><li>UIKit</li><li>Combine</li><li>PDFKit</li><li>URLSession</li><li>Razorpay</li>
-                                </ul>
+            <div class="timeline">
+                <article class="tl-item">
+                    <div class="tl-marker current" aria-hidden="true"></div>
+                    <div class="tl-card">
+                        <div class="tl-top">
+                            <div class="tl-logo" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
                             </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="card" href="https://appstick.com.bd/" target="_blank" rel="noopener noreferrer">
-                            <span class="card-when">Sep 2023 — Aug 2025</span>
-                            <div class="card-body">
-                                <h4>Software Engineer (iOS) · Appstick <span class="ext-arrow" aria-hidden="true">↗</span></h4>
-                                <p class="card-loc">Khulna, Bangladesh</p>
-                                <p>Built and optimized Msar Amen, a Saudi Arabia ride-sharing app with real-time Socket.io tracking and MapKit. Led feature development, ran code reviews, and mentored junior iOS developers on architecture and best practices.</p>
-                                <ul class="highlights">
-                                    <li>Reduced memory usage by 40% through caching and thread management with Swift Concurrency</li>
-                                    <li>Integrated on-device LLM with Apple foundation models for dynamic ride-screen text</li>
-                                    <li>Shipped WidgetKit extensions and Live Activities for Lock Screen and Dynamic Island</li>
-                                    <li>Cut release time by 60% with Fastlane CI/CD; drove 70% test coverage</li>
-                                </ul>
-                                <ul class="pill-list" aria-label="Technologies used">
-                                    <li>Swift Concurrency</li><li>MapKit</li><li>Socket.io</li><li>WidgetKit</li><li>On-device LLM</li><li>Fastlane</li>
-                                </ul>
+                            <div>
+                                <h3>iOS Developer · <a href="https://www.filesure.in/" target="_blank" rel="noopener noreferrer">FileSure</a></h3>
+                                <p class="tl-meta">Sep 2025 — Present · Dhaka, Bangladesh</p>
                             </div>
-                        </a>
-                    </li>
-                </ol>
-            </section>
+                        </div>
+                        <p class="tl-desc">Architected the FileSure document app from scratch — custom PDF reader, background download engine, payments.</p>
+                        <div class="metric-chips">
+                            <span class="chip chip-down">▼ 50% API calls</span>
+                            <span class="chip chip-down">▼ 35% bandwidth</span>
+                            <span class="chip chip-up">▲ near-zero failed downloads</span>
+                        </div>
+                        <ul class="pill-list"><li>SwiftUI</li><li>Combine</li><li>PDFKit</li><li>URLSession</li><li>Razorpay</li></ul>
+                    </div>
+                </article>
 
-            <section id="projects" class="panel" aria-label="Projects">
-                <h3 class="mobile-heading">Projects</h3>
-                <ol class="card-list">
-                    <li>
-                        <a class="card" href="https://apps.apple.com/in/app/filesure/id6759514259" target="_blank" rel="noopener noreferrer">
-                            <span class="card-when">2025 — Present</span>
-                            <div class="card-body">
-                                <h4>FileSure <span class="ext-arrow" aria-hidden="true">↗</span></h4>
-                                <p>High-performance document management app on the App Store. Custom PDFKit reader, concurrent background downloads with pause/resume, debounced Combine search, and Razorpay payments — engineered to stay fast under high traffic.</p>
-                                <ul class="pill-list" aria-label="Technologies used">
-                                    <li>SwiftUI</li><li>PDFKit</li><li>Combine</li><li>URLSession</li>
-                                </ul>
+                <article class="tl-item">
+                    <div class="tl-marker" aria-hidden="true"></div>
+                    <div class="tl-card">
+                        <div class="tl-top">
+                            <div class="tl-logo" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
                             </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="card" href="https://apps.apple.com/sa/app/msar-%D9%85%D8%B3%D8%A7%D8%B1/id1639771181" target="_blank" rel="noopener noreferrer">
-                            <span class="card-when">2024 — Present</span>
-                            <div class="card-body">
-                                <h4>Msar Amen <span class="ext-arrow" aria-hidden="true">↗</span></h4>
-                                <p>Saudi ride-sharing platform. Led the iOS architecture: real-time driver tracking over Socket.io, route optimization and geofencing with CoreLocation, MyFatoorah payments, and APNS/Firebase notifications.</p>
-                                <ul class="pill-list" aria-label="Technologies used">
-                                    <li>SwiftUI</li><li>MapKit</li><li>Socket.io</li><li>Firebase</li>
-                                </ul>
+                            <div>
+                                <h3>Software Engineer (iOS) · <a href="https://appstick.com.bd/" target="_blank" rel="noopener noreferrer">Appstick</a></h3>
+                                <p class="tl-meta">Sep 2023 — Aug 2025 · Khulna, Bangladesh</p>
                             </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="card" href="https://apps.apple.com/us/app/kotha/id1188060798" target="_blank" rel="noopener noreferrer">
-                            <span class="card-when">2024 — 2025</span>
-                            <div class="card-body">
-                                <h4>Kotha <span class="ext-arrow" aria-hidden="true">↗</span></h4>
-                                <p>Bangladesh's leading homegrown social media and marketplace platform, recipient of the National ICT Award. Built short-video feeds with AVFoundation and FFMPEG, real-time chat with backup, WebRTC voice/video calling, and secure bKash payments.</p>
-                                <ul class="pill-list" aria-label="Technologies used">
-                                    <li>WebRTC</li><li>AVFoundation</li><li>FFMPEG</li><li>Firebase</li>
-                                </ul>
-                            </div>
-                        </a>
-                    </li>
-                </ol>
-            </section>
+                        </div>
+                        <p class="tl-desc">Built a Saudi ride-sharing app with real-time tracking, Live Activities, and on-device LLM features. Mentored junior engineers.</p>
+                        <div class="metric-chips">
+                            <span class="chip chip-down">▼ 40% memory</span>
+                            <span class="chip chip-down">▼ 60% release time</span>
+                            <span class="chip chip-up">▲ 70% test coverage</span>
+                        </div>
+                        <ul class="pill-list"><li>Swift Concurrency</li><li>MapKit</li><li>Socket.io</li><li>WidgetKit</li><li>Fastlane</li></ul>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-            <section id="skills" class="panel" aria-label="Skills">
-                <h3 class="mobile-heading">Skills</h3>
-                <dl class="skills-list">
-                    <div class="skill-row">
-                        <dt>Core iOS</dt>
-                        <dd><ul class="pill-list"><li>Swift</li><li>SwiftUI</li><li>UIKit</li><li>Xcode</li><li>SPM</li><li>CocoaPods</li></ul></dd>
-                    </div>
-                    <div class="skill-row">
-                        <dt>Architecture</dt>
-                        <dd><ul class="pill-list"><li>Async/Await</li><li>Combine</li><li>MVVM</li><li>SOLID</li><li>Clean Architecture</li></ul></dd>
-                    </div>
-                    <div class="skill-row">
-                        <dt>UI &amp; Media</dt>
-                        <dd><ul class="pill-list"><li>MapKit</li><li>PDFKit</li><li>WidgetKit</li><li>AVFoundation</li><li>WebRTC</li><li>Socket.io</li></ul></dd>
-                    </div>
-                    <div class="skill-row">
-                        <dt>AI / ML</dt>
-                        <dd><ul class="pill-list"><li>CoreML</li><li>On-device LLM</li><li>Apple Intelligence</li><li>Natural Language</li></ul></dd>
-                    </div>
-                    <div class="skill-row">
-                        <dt>Data &amp; Networking</dt>
-                        <dd><ul class="pill-list"><li>REST API</li><li>URLSession</li><li>Alamofire</li><li>CoreData</li><li>SwiftData</li><li>Firebase</li></ul></dd>
-                    </div>
-                    <div class="skill-row">
-                        <dt>Quality &amp; Delivery</dt>
-                        <dd><ul class="pill-list"><li>XCTest</li><li>Unit Testing</li><li>Fastlane</li><li>CI/CD</li><li>Git/GitHub</li></ul></dd>
-                    </div>
-                </dl>
-            </section>
+        <!-- ============ PROJECTS ============ -->
+        <section id="projects" class="section">
+            <div class="section-head">
+                <span class="section-kicker">Selected work</span>
+                <h2>Apps I've shipped</h2>
+            </div>
 
-            <section id="more" class="panel" aria-label="Beyond code">
-                <h3 class="mobile-heading">Beyond Code</h3>
-                <div class="stats-grid">
-                    <div class="stat">
-                        <span class="stat-number" data-count="50">50+</span>
-                        <span class="stat-label">iOS articles published</span>
+            <div class="project-grid">
+                <a class="project-card" href="https://apps.apple.com/in/app/filesure/id6759514259" target="_blank" rel="noopener noreferrer">
+                    <div class="project-visual visual-teal" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><path d="M9 15h6"/><path d="M9 11h2"/></svg>
+                        <span class="store-tag">App Store ↗</span>
                     </div>
-                    <div class="stat">
-                        <span class="stat-number" data-count="250">250+</span>
-                        <span class="stat-label">algorithmic problems solved</span>
+                    <div class="project-body">
+                        <h3>FileSure</h3>
+                        <p>Document management with a custom PDF reader and downloads that never give up.</p>
+                        <ul class="pill-list"><li>SwiftUI</li><li>PDFKit</li><li>Combine</li></ul>
                     </div>
-                    <div class="stat">
-                        <span class="stat-number" data-count="3000">3000+</span>
-                        <span class="stat-label">monthly blog readers</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number" data-count="2000">2000+</span>
-                        <span class="stat-label">LinkedIn followers</span>
-                    </div>
-                </div>
-                <ul class="achievement-list">
-                    <li><strong>1st Place</strong> — NUBTK Programming Contest 2022 (university-wide)</li>
-                    <li><strong>ACM ICPC</strong> Dhaka Qualifying Round 2022</li>
-                    <li><strong>Meta iOS Developer</strong> Professional Certificate (Coursera)</li>
-                    <li><strong>SwiftUI Advanced Architecture</strong> (Swiftful Thinking)</li>
-                    <li><strong>BSc in CSE</strong> — Northern University of Business &amp; Technology Khulna, CGPA 3.59/4.00</li>
-                </ul>
-            </section>
-
-            <section id="contact" class="panel contact-panel" aria-label="Contact">
-                <h3 class="contact-heading">Let's build something together</h3>
-                <p>I'm currently open to iOS engineering opportunities. Whether you have a role in mind, a question about one of my articles, or just want to talk Swift — my inbox is open.</p>
-                <a class="contact-cta" href="mailto:ferdous.webdev@gmail.com">
-                    Say hello
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                 </a>
-            </section>
 
-            <footer class="footer">
-                <p>Designed and built by Ferdous Mahmud Akash. Plain HTML, CSS, and JavaScript — no frameworks harmed.</p>
-            </footer>
-        </main>
-    </div>
+                <a class="project-card" href="https://apps.apple.com/sa/app/msar-%D9%85%D8%B3%D8%A7%D8%B1/id1639771181" target="_blank" rel="noopener noreferrer">
+                    <div class="project-visual visual-violet" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
+                        <span class="store-tag">App Store ↗</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Msar Amen</h3>
+                        <p>Saudi ride-sharing with live driver tracking, geofencing, and payments.</p>
+                        <ul class="pill-list"><li>MapKit</li><li>Socket.io</li><li>Firebase</li></ul>
+                    </div>
+                </a>
+
+                <a class="project-card" href="https://apps.apple.com/us/app/kotha/id1188060798" target="_blank" rel="noopener noreferrer">
+                    <div class="project-visual visual-rose" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22z"/><path d="M8 12h.01"/><path d="M12 12h.01"/><path d="M16 12h.01"/></svg>
+                        <span class="store-tag">App Store ↗</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Kotha <span class="award" title="National ICT Award">🏅</span></h3>
+                        <p>Bangladesh's leading social platform — short video, chat, and video calls.</p>
+                        <ul class="pill-list"><li>WebRTC</li><li>AVFoundation</li><li>FFMPEG</li></ul>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- ============ SKILLS ============ -->
+        <section id="skills" class="section">
+            <div class="section-head">
+                <span class="section-kicker">Toolbox</span>
+                <h2>Skills</h2>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+                    </div>
+                    <h3>Core iOS</h3>
+                    <ul class="pill-list"><li>Swift</li><li>SwiftUI</li><li>UIKit</li><li>Xcode</li><li>SPM</li></ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+                    </div>
+                    <h3>Architecture</h3>
+                    <ul class="pill-list"><li>MVVM</li><li>Combine</li><li>Async/Await</li><li>SOLID</li></ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 0 0-5 5c0 1.7.8 3.2 2 4.1V13a3 3 0 0 0 6 0v-1.9c1.2-.9 2-2.4 2-4.1a5 5 0 0 0-5-5z"/><path d="M9 21h6"/><path d="M12 16v5"/></svg>
+                    </div>
+                    <h3>AI / ML</h3>
+                    <ul class="pill-list"><li>On-device LLM</li><li>CoreML</li><li>Apple Intelligence</li></ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg>
+                    </div>
+                    <h3>Data &amp; Networking</h3>
+                    <ul class="pill-list"><li>URLSession</li><li>CoreData</li><li>SwiftData</li><li>Firebase</li></ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3"/><path d="M12 19v3"/><path d="m19 5-2 2"/><path d="m7 17-2 2"/><path d="M22 12h-3"/><path d="M5 12H2"/><path d="m19 19-2-2"/><path d="m7 7-2-2"/></svg>
+                    </div>
+                    <h3>Real-time &amp; Media</h3>
+                    <ul class="pill-list"><li>WebRTC</li><li>Socket.io</li><li>AVFoundation</li><li>MapKit</li></ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                    </div>
+                    <h3>Quality &amp; Delivery</h3>
+                    <ul class="pill-list"><li>XCTest</li><li>Fastlane</li><li>CI/CD</li><li>Git</li></ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ HIGHLIGHTS ============ -->
+        <section id="highlights" class="section">
+            <div class="section-head">
+                <span class="section-kicker">Beyond code</span>
+                <h2>Highlights</h2>
+            </div>
+            <div class="highlight-row">
+                <div class="highlight-card">
+                    <span class="highlight-emoji" aria-hidden="true">🏆</span>
+                    <p><strong>1st Place</strong><br>NUBTK Programming Contest 2022</p>
+                </div>
+                <div class="highlight-card">
+                    <span class="highlight-emoji" aria-hidden="true">⚔️</span>
+                    <p><strong>ACM ICPC</strong><br>Dhaka Qualifying Round 2022</p>
+                </div>
+                <div class="highlight-card">
+                    <span class="highlight-emoji" aria-hidden="true">📜</span>
+                    <p><strong>Meta iOS Developer</strong><br>Professional Certificate</p>
+                </div>
+                <div class="highlight-card">
+                    <span class="highlight-emoji" aria-hidden="true">✍️</span>
+                    <p><strong>50+ articles</strong><br>iOS writing, 3000+ readers/mo</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section id="contact" class="contact">
+            <h2>Let's build something <span class="grad">together</span></h2>
+            <p>Open to iOS engineering roles and interesting conversations about Swift.</p>
+            <a class="btn btn-solid btn-lg" href="mailto:ferdous.webdev@gmail.com">
+                ferdous.webdev@gmail.com
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+        </section>
+
+        <footer class="footer">
+            <p>© 2026 Ferdous Mahmud Akash</p>
+            <ul class="footer-links">
+                <li><a href="https://github.com/ferdous19" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/ferdous19" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="mailto:ferdous.webdev@gmail.com">Email</a></li>
+            </ul>
+        </footer>
+    </main>
 
     <script src="script.js"></script>
 </body>
