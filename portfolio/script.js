@@ -1,69 +1,46 @@
-// Smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
+// ===== Cursor spotlight =====
+const spotlight = document.querySelector('.spotlight');
+if (spotlight && window.matchMedia('(pointer: fine)').matches) {
+    window.addEventListener('mousemove', (e) => {
+        spotlight.style.setProperty('--mx', `${e.clientX}px`);
+        spotlight.style.setProperty('--my', `${e.clientY}px`);
+    }, { passive: true });
+}
+
+// ===== Scroll-spy: highlight sidebar nav for the section in view =====
+const navLinks = document.querySelectorAll('.nav-link');
+const sections = [...navLinks]
+    .map((link) => document.querySelector(link.getAttribute('href')))
+    .filter(Boolean);
+
+if (sections.length) {
+    const spy = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            navLinks.forEach((link) => {
+                link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
             });
-        }
-    });
-});
+        });
+    }, { rootMargin: '-30% 0px -60% 0px' });
 
-// Add animation on scroll
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
-};
+    sections.forEach((section) => spy.observe(section));
+}
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-        }
-    });
-}, observerOptions);
+// ===== Reveal-on-scroll animation =====
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-// Observe all sections
-document.querySelectorAll('section').forEach(section => {
-    section.style.opacity = '0';
-    section.style.transform = 'translateY(20px)';
-    section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(section);
-});
+if (!reduceMotion) {
+    const revealTargets = document.querySelectorAll('.panel, .footer');
+    revealTargets.forEach((el) => el.classList.add('reveal'));
 
-// Hero section should be visible immediately
-document.querySelector('.hero').style.opacity = '1';
-document.querySelector('.hero').style.transform = 'translateY(0)';
+    const revealer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                revealer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.08, rootMargin: '0px 0px -60px 0px' });
 
-// Parallax effect for hero section
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
-    if (hero) {
-        hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-    }
-});
-
-// Dynamic skill tags color randomizer on click
-document.querySelectorAll('.skill-tag').forEach(tag => {
-    tag.addEventListener('click', function() {
-        const colors = ['#FFE66D', '#00F5FF', '#FF66C4', '#CCFF00', '#B39DDB'];
-        const randomColor = colors[Math.floor(Math.random() * colors.length)];
-        this.style.backgroundColor = randomColor;
-    });
-});
-
-// Add loading animation
-window.addEventListener('load', () => {
-    document.body.style.opacity = '0';
-    setTimeout(() => {
-        document.body.style.transition = 'opacity 0.5s ease';
-        document.body.style.opacity = '1';
-    }, 100);
-});
-
-console.log('🚀 Portfolio loaded! Built with NeoBrutalism style ⚡');
+    revealTargets.forEach((el) => revealer.observe(el));
+}

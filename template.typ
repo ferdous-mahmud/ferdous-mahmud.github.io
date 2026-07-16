@@ -57,6 +57,9 @@
       // Left: name + contact
       [
         #formattedName
+        #if title != none [
+          #text(1.05em, weight: "medium", fill: theme.darken(15%), title)
+        ]
         #contactLine
       ],
       // Right: circular photo with themed border ring
@@ -73,6 +76,9 @@
   } else {
     align(center)[
       #formattedName
+      #if title != none [
+        #text(1.05em, weight: "medium", fill: theme.darken(15%), title)
+      ]
       #contactLine
     ]
     line(length: 100%, stroke: 1.5pt + theme)
