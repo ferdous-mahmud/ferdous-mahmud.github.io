@@ -7,7 +7,7 @@
     <meta name="description" content="iOS Engineer specialized in Swift, SwiftUI, on-device LLM, and scalable mobile architecture. Building high-performance products at FileSure, previously Appstick.">
     <meta name="keywords" content="Ferdous Mahmud Akash, iOS Developer, iOS Engineer, Swift, SwiftUI, UIKit, Apple Intelligence, CoreML, FileSure, Appstick">
     <meta name="author" content="Ferdous Mahmud Akash">
-    <meta name="theme-color" content="#0b1020">
+    <meta name="theme-color" content="#0e1226">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ferdous-mahmud.github.io/">
@@ -37,21 +37,22 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="bg-glow" aria-hidden="true"></div>
+    <canvas id="sakura" aria-hidden="true"></canvas>
+    <div class="bg-deco" aria-hidden="true"></div>
 
     <!-- ============ NAV ============ -->
     <nav class="nav">
         <div class="nav-inner">
-            <a class="nav-logo" href="#top" aria-label="Home">FM<span>.</span></a>
+            <a class="nav-logo" href="#top">ふ<span class="logo-heart">★</span></a>
             <ul class="nav-links">
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
             </ul>
-            <a class="nav-cta" href="mailto:ferdous.webdev@gmail.com">Get in touch</a>
+            <a class="nav-cta" href="mailto:ferdous.webdev@gmail.com">Say hi ✉</a>
         </div>
     </nav>
 
@@ -59,41 +60,44 @@
 
         <!-- ============ HERO ============ -->
         <header class="hero">
-            <div class="avatar-ring">
+            <div class="hero-avatar">
+                <span class="ring" aria-hidden="true"></span>
                 <img src="profile.jpg" alt="Ferdous Mahmud Akash" class="avatar">
+                <span class="sparkle s1" aria-hidden="true">✦</span>
+                <span class="sparkle s2" aria-hidden="true">✧</span>
+                <span class="sparkle s3" aria-hidden="true">✦</span>
+                <span class="hero-bubble" aria-hidden="true">よろしく！</span>
             </div>
+
             <div class="availability">
                 <span class="pulse-dot" aria-hidden="true"></span>
                 Open to iOS opportunities
             </div>
+
             <h1>Ferdous Mahmud <span class="grad">Akash</span></h1>
-            <p class="hero-sub">iOS Engineer crafting fast, reliable apps with <strong>Swift</strong>, <strong>SwiftUI</strong> &amp; <strong>on-device AI</strong> — shipped to users across Saudi Arabia and Bangladesh.</p>
+            <p class="hero-jp" aria-hidden="true">— iOSエンジニア —</p>
+            <p class="hero-sub">I craft fast &amp; reliable iOS apps with <strong>Swift</strong>, <strong>SwiftUI</strong> and <strong>on-device AI</strong> — shipped to users across Saudi Arabia and Bangladesh.</p>
+
             <div class="hero-actions">
-                <a class="btn btn-solid" href="#projects">See my work</a>
-                <a class="btn btn-ghost" href="https://github.com/ferdous-mahmud" target="_blank" rel="noopener noreferrer">
-                    <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-                    GitHub
-                </a>
-                <a class="btn btn-ghost" href="https://www.linkedin.com/in/ferdous19" target="_blank" rel="noopener noreferrer">
-                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"/></svg>
-                    LinkedIn
-                </a>
+                <a class="btn btn-solid" href="#projects">★ See my work</a>
+                <a class="btn btn-ghost" href="https://github.com/ferdous-mahmud" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a class="btn btn-ghost" href="https://www.linkedin.com/in/ferdous19" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
 
             <div class="stats-band">
-                <div class="stat">
+                <div class="stat stat-pink">
                     <span class="stat-number">2+</span>
                     <span class="stat-label">years shipping iOS</span>
                 </div>
-                <div class="stat">
+                <div class="stat stat-sky">
                     <span class="stat-number">3</span>
                     <span class="stat-label">apps on the App Store</span>
                 </div>
-                <div class="stat">
+                <div class="stat stat-mint">
                     <span class="stat-number">50+</span>
                     <span class="stat-label">iOS articles published</span>
                 </div>
-                <div class="stat">
+                <div class="stat stat-lav">
                     <span class="stat-number">3000+</span>
                     <span class="stat-label">monthly blog readers</span>
                 </div>
@@ -101,19 +105,21 @@
         </header>
 
         <!-- ============ EXPERIENCE ============ -->
-        <section id="experience" class="section">
+        <section id="experience" class="section" data-kanji="経歴">
             <div class="section-head">
-                <span class="section-kicker">Career</span>
+                <span class="jp-tag">けいれき</span>
                 <h2>Experience</h2>
+                <span class="head-deco" aria-hidden="true">✦ ★ ✦</span>
             </div>
 
             <div class="timeline">
                 <article class="tl-item">
                     <div class="tl-marker current" aria-hidden="true"></div>
-                    <div class="tl-card">
+                    <div class="card tl-card">
                         <div class="tl-top">
-                            <div class="tl-logo" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            <div class="tl-logo logo-pink" aria-hidden="true">
+                                <!-- kawaii document -->
+                                <svg viewBox="0 0 48 48" fill="none"><path d="M12 8a4 4 0 0 1 4-4h12l10 10v26a4 4 0 0 1-4 4H16a4 4 0 0 1-4-4V8z" fill="#fff"/><path d="M28 4l10 10h-8a2 2 0 0 1-2-2V4z" fill="#bfe4ff"/><circle cx="20" cy="27" r="1.8" fill="#303655"/><circle cx="30" cy="27" r="1.8" fill="#303655"/><path d="M22.5 32c1 1.2 4 1.2 5 0" stroke="#303655" stroke-width="1.6" stroke-linecap="round"/><ellipse cx="16.5" cy="30.5" rx="1.8" ry="1.1" fill="#9fd4ff"/><ellipse cx="33.5" cy="30.5" rx="1.8" ry="1.1" fill="#9fd4ff"/></svg>
                             </div>
                             <div>
                                 <h3>iOS Developer · <a href="https://www.filesure.in/" target="_blank" rel="noopener noreferrer">FileSure</a></h3>
@@ -122,9 +128,9 @@
                         </div>
                         <p class="tl-desc">Architected the FileSure document app from scratch — custom PDF reader, background download engine, payments.</p>
                         <div class="metric-chips">
-                            <span class="chip chip-down">▼ 50% API calls</span>
-                            <span class="chip chip-down">▼ 35% bandwidth</span>
-                            <span class="chip chip-up">▲ near-zero failed downloads</span>
+                            <span class="chip chip-good">▼ 50% API calls</span>
+                            <span class="chip chip-good">▼ 35% bandwidth</span>
+                            <span class="chip chip-nice">▲ near-zero failed downloads</span>
                         </div>
                         <ul class="pill-list"><li>SwiftUI</li><li>Combine</li><li>PDFKit</li><li>URLSession</li><li>Razorpay</li></ul>
                     </div>
@@ -132,10 +138,11 @@
 
                 <article class="tl-item">
                     <div class="tl-marker" aria-hidden="true"></div>
-                    <div class="tl-card">
+                    <div class="card tl-card">
                         <div class="tl-top">
-                            <div class="tl-logo" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+                            <div class="tl-logo logo-lav" aria-hidden="true">
+                                <!-- kawaii phone -->
+                                <svg viewBox="0 0 48 48" fill="none"><rect x="13" y="5" width="22" height="38" rx="5" fill="#fff"/><rect x="20" y="8" width="8" height="2.4" rx="1.2" fill="#d9ccff"/><circle cx="20" cy="24" r="1.8" fill="#303655"/><circle cx="28" cy="24" r="1.8" fill="#303655"/><path d="M21.5 28.5c1 1.2 4 1.2 5 0" stroke="#303655" stroke-width="1.6" stroke-linecap="round"/><ellipse cx="17" cy="27.5" rx="1.8" ry="1.1" fill="#d9c8ff"/><ellipse cx="31" cy="27.5" rx="1.8" ry="1.1" fill="#d9c8ff"/><circle cx="24" cy="38" r="1.6" fill="#d9ccff"/></svg>
                             </div>
                             <div>
                                 <h3>Software Engineer (iOS) · <a href="https://appstick.com.bd/" target="_blank" rel="noopener noreferrer">Appstick</a></h3>
@@ -144,9 +151,9 @@
                         </div>
                         <p class="tl-desc">Built a Saudi ride-sharing app with real-time tracking, Live Activities, and on-device LLM features. Mentored junior engineers.</p>
                         <div class="metric-chips">
-                            <span class="chip chip-down">▼ 40% memory</span>
-                            <span class="chip chip-down">▼ 60% release time</span>
-                            <span class="chip chip-up">▲ 70% test coverage</span>
+                            <span class="chip chip-good">▼ 40% memory</span>
+                            <span class="chip chip-good">▼ 60% release time</span>
+                            <span class="chip chip-nice">▲ 70% test coverage</span>
                         </div>
                         <ul class="pill-list"><li>Swift Concurrency</li><li>MapKit</li><li>Socket.io</li><li>WidgetKit</li><li>Fastlane</li></ul>
                     </div>
@@ -155,16 +162,26 @@
         </section>
 
         <!-- ============ PROJECTS ============ -->
-        <section id="projects" class="section">
+        <section id="projects" class="section" data-kanji="作品">
             <div class="section-head">
-                <span class="section-kicker">Selected work</span>
+                <span class="jp-tag">さくひん</span>
                 <h2>Apps I've shipped</h2>
+                <span class="head-deco" aria-hidden="true">✦ ★ ✦</span>
             </div>
 
             <div class="project-grid">
-                <a class="project-card" href="https://apps.apple.com/in/app/filesure/id6759514259" target="_blank" rel="noopener noreferrer">
-                    <div class="project-visual visual-teal" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><path d="M9 15h6"/><path d="M9 11h2"/></svg>
+                <a class="card project-card" href="https://apps.apple.com/in/app/filesure/id6759514259" target="_blank" rel="noopener noreferrer">
+                    <div class="project-visual visual-pink" aria-hidden="true">
+                        <svg class="mascot" viewBox="0 0 96 96" fill="none">
+                            <path d="M26 18a6 6 0 0 1 6-6h24l18 18v48a6 6 0 0 1-6 6H32a6 6 0 0 1-6-6V18z" fill="#fff"/>
+                            <path d="M56 12l18 18H60a4 4 0 0 1-4-4V12z" fill="#bfe4ff"/>
+                            <circle cx="42" cy="52" r="3.2" fill="#303655"/>
+                            <circle cx="58" cy="52" r="3.2" fill="#303655"/>
+                            <path d="M45 60c2 2.4 8 2.4 10 0" stroke="#303655" stroke-width="2.6" stroke-linecap="round"/>
+                            <ellipse cx="36" cy="58" rx="3.4" ry="2" fill="#9fd4ff"/>
+                            <ellipse cx="64" cy="58" rx="3.4" ry="2" fill="#9fd4ff"/>
+                            <path d="M38 74h20" stroke="#bfe4ff" stroke-width="3" stroke-linecap="round"/>
+                        </svg>
                         <span class="store-tag">App Store ↗</span>
                     </div>
                     <div class="project-body">
@@ -174,9 +191,19 @@
                     </div>
                 </a>
 
-                <a class="project-card" href="https://apps.apple.com/sa/app/msar-%D9%85%D8%B3%D8%A7%D8%B1/id1639771181" target="_blank" rel="noopener noreferrer">
-                    <div class="project-visual visual-violet" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
+                <a class="card project-card" href="https://apps.apple.com/sa/app/msar-%D9%85%D8%B3%D8%A7%D8%B1/id1639771181" target="_blank" rel="noopener noreferrer">
+                    <div class="project-visual visual-sky" aria-hidden="true">
+                        <svg class="mascot" viewBox="0 0 96 96" fill="none">
+                            <path d="M16 54c0-4 2-8 5-10l7-12c2-3 5-5 9-5h22c4 0 7 2 9 5l7 12c3 2 5 6 5 10v8a4 4 0 0 1-4 4H20a4 4 0 0 1-4-4v-8z" fill="#fff"/>
+                            <path d="M31 38l4-8c1-2 3-3 5-3h16c2 0 4 1 5 3l4 8H31z" fill="#cdeaff"/>
+                            <circle cx="41" cy="52" r="3.2" fill="#303655"/>
+                            <circle cx="55" cy="52" r="3.2" fill="#303655"/>
+                            <path d="M44 59c2 2.4 6 2.4 8 0" stroke="#303655" stroke-width="2.6" stroke-linecap="round"/>
+                            <ellipse cx="34" cy="57" rx="3.4" ry="2" fill="#a5d8ff"/>
+                            <ellipse cx="62" cy="57" rx="3.4" ry="2" fill="#a5d8ff"/>
+                            <circle cx="28" cy="68" r="6" fill="#303655"/><circle cx="28" cy="68" r="2.4" fill="#fff"/>
+                            <circle cx="68" cy="68" r="6" fill="#303655"/><circle cx="68" cy="68" r="2.4" fill="#fff"/>
+                        </svg>
                         <span class="store-tag">App Store ↗</span>
                     </div>
                     <div class="project-body">
@@ -186,9 +213,17 @@
                     </div>
                 </a>
 
-                <a class="project-card" href="https://apps.apple.com/us/app/kotha/id1188060798" target="_blank" rel="noopener noreferrer">
-                    <div class="project-visual visual-rose" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22z"/><path d="M8 12h.01"/><path d="M12 12h.01"/><path d="M16 12h.01"/></svg>
+                <a class="card project-card" href="https://apps.apple.com/us/app/kotha/id1188060798" target="_blank" rel="noopener noreferrer">
+                    <div class="project-visual visual-lav" aria-hidden="true">
+                        <svg class="mascot" viewBox="0 0 96 96" fill="none">
+                            <path d="M48 14c-19 0-34 12-34 28 0 9 5 17 13 22l-3 12 14-7c3 .6 6.6 1 10 1 19 0 34-12 34-28s-15-28-34-28z" fill="#fff"/>
+                            <circle cx="40" cy="42" r="3.2" fill="#303655"/>
+                            <circle cx="56" cy="42" r="3.2" fill="#303655"/>
+                            <path d="M43 50c2 2.4 8 2.4 10 0" stroke="#303655" stroke-width="2.6" stroke-linecap="round"/>
+                            <ellipse cx="33" cy="48" rx="3.4" ry="2" fill="#d9c8ff"/>
+                            <ellipse cx="63" cy="48" rx="3.4" ry="2" fill="#d9c8ff"/>
+                            <path d="M64 26l2.2 4.4L71 32l-4.8 1.6L64 38l-2.2-4.4L57 32l4.8-1.6L64 26z" fill="#ffe08a"/>
+                        </svg>
                         <span class="store-tag">App Store ↗</span>
                     </div>
                     <div class="project-body">
@@ -201,52 +236,41 @@
         </section>
 
         <!-- ============ SKILLS ============ -->
-        <section id="skills" class="section">
+        <section id="skills" class="section" data-kanji="技能">
             <div class="section-head">
-                <span class="section-kicker">Toolbox</span>
+                <span class="jp-tag">スキル</span>
                 <h2>Skills</h2>
+                <span class="head-deco" aria-hidden="true">✦ ★ ✦</span>
             </div>
 
             <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
-                    </div>
+                <div class="card skill-card">
+                    <div class="skill-icon icon-pink" aria-hidden="true">📱</div>
                     <h3>Core iOS</h3>
                     <ul class="pill-list"><li>Swift</li><li>SwiftUI</li><li>UIKit</li><li>Xcode</li><li>SPM</li></ul>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
-                    </div>
+                <div class="card skill-card">
+                    <div class="skill-icon icon-sky" aria-hidden="true">🏯</div>
                     <h3>Architecture</h3>
                     <ul class="pill-list"><li>MVVM</li><li>Combine</li><li>Async/Await</li><li>SOLID</li></ul>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 0 0-5 5c0 1.7.8 3.2 2 4.1V13a3 3 0 0 0 6 0v-1.9c1.2-.9 2-2.4 2-4.1a5 5 0 0 0-5-5z"/><path d="M9 21h6"/><path d="M12 16v5"/></svg>
-                    </div>
+                <div class="card skill-card">
+                    <div class="skill-icon icon-lav" aria-hidden="true">🔮</div>
                     <h3>AI / ML</h3>
                     <ul class="pill-list"><li>On-device LLM</li><li>CoreML</li><li>Apple Intelligence</li></ul>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg>
-                    </div>
+                <div class="card skill-card">
+                    <div class="skill-icon icon-mint" aria-hidden="true">🌐</div>
                     <h3>Data &amp; Networking</h3>
                     <ul class="pill-list"><li>URLSession</li><li>CoreData</li><li>SwiftData</li><li>Firebase</li></ul>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3"/><path d="M12 19v3"/><path d="m19 5-2 2"/><path d="m7 17-2 2"/><path d="M22 12h-3"/><path d="M5 12H2"/><path d="m19 19-2-2"/><path d="m7 7-2-2"/></svg>
-                    </div>
+                <div class="card skill-card">
+                    <div class="skill-icon icon-peach" aria-hidden="true">⚡</div>
                     <h3>Real-time &amp; Media</h3>
                     <ul class="pill-list"><li>WebRTC</li><li>Socket.io</li><li>AVFoundation</li><li>MapKit</li></ul>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-                    </div>
+                <div class="card skill-card">
+                    <div class="skill-icon icon-lemon" aria-hidden="true">🚀</div>
                     <h3>Quality &amp; Delivery</h3>
                     <ul class="pill-list"><li>XCTest</li><li>Fastlane</li><li>CI/CD</li><li>Git</li></ul>
                 </div>
@@ -254,25 +278,26 @@
         </section>
 
         <!-- ============ HIGHLIGHTS ============ -->
-        <section id="highlights" class="section">
+        <section id="highlights" class="section" data-kanji="実績">
             <div class="section-head">
-                <span class="section-kicker">Beyond code</span>
+                <span class="jp-tag">じっせき</span>
                 <h2>Highlights</h2>
+                <span class="head-deco" aria-hidden="true">✦ ★ ✦</span>
             </div>
             <div class="highlight-row">
-                <div class="highlight-card">
+                <div class="card highlight-card">
                     <span class="highlight-emoji" aria-hidden="true">🏆</span>
                     <p><strong>1st Place</strong><br>NUBTK Programming Contest 2022</p>
                 </div>
-                <div class="highlight-card">
+                <div class="card highlight-card">
                     <span class="highlight-emoji" aria-hidden="true">⚔️</span>
                     <p><strong>ACM ICPC</strong><br>Dhaka Qualifying Round 2022</p>
                 </div>
-                <div class="highlight-card">
+                <div class="card highlight-card">
                     <span class="highlight-emoji" aria-hidden="true">📜</span>
                     <p><strong>Meta iOS Developer</strong><br>Professional Certificate</p>
                 </div>
-                <div class="highlight-card">
+                <div class="card highlight-card">
                     <span class="highlight-emoji" aria-hidden="true">✍️</span>
                     <p><strong>50+ articles</strong><br>iOS writing, 3000+ readers/mo</p>
                 </div>
@@ -281,16 +306,16 @@
 
         <!-- ============ CONTACT ============ -->
         <section id="contact" class="contact">
-            <h2>Let's build something <span class="grad">together</span></h2>
-            <p>Open to iOS engineering roles and interesting conversations about Swift.</p>
-            <a class="btn btn-solid btn-lg" href="mailto:ferdous.webdev@gmail.com">
-                ferdous.webdev@gmail.com
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            </a>
+            <div class="card contact-card">
+                <span class="contact-jp" aria-hidden="true">いっしょに つくりましょう！</span>
+                <h2>Let's build something <span class="grad">together</span> ⚡</h2>
+                <p>Open to iOS engineering roles and fun conversations about Swift.</p>
+                <a class="btn btn-solid btn-lg" href="mailto:ferdous.webdev@gmail.com">ferdous.webdev@gmail.com →</a>
+            </div>
         </section>
 
         <footer class="footer">
-            <p>© 2026 Ferdous Mahmud Akash</p>
+            <p>© 2026 Ferdous Mahmud Akash · made with ⚡ and late-night coffee ☕</p>
             <ul class="footer-links">
                 <li><a href="https://github.com/ferdous-mahmud" target="_blank" rel="noopener noreferrer">GitHub</a></li>
                 <li><a href="https://www.linkedin.com/in/ferdous19" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
