@@ -54,7 +54,7 @@
     #text(size: 9pt)[
       バングラデシュ・ダッカ　／　日本への転居可能 \
       #link("mailto:ferdous.webdev@gmail.com")[ferdous.webdev\@gmail.com] · (+88) 01401678150 \
-      #link("https://github.com/ferdous19")[github.com/ferdous19] ·
+      #link("https://github.com/ferdous-mahmud")[github.com/ferdous-mahmud] ·
       #link("https://www.linkedin.com/in/ferdous19")[linkedin.com/in/ferdous19] ·
       #link("https://ferdous-mahmud.github.io")[ferdous-mahmud.github.io]
     ]
