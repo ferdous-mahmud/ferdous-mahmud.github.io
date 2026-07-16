@@ -229,36 +229,6 @@ a {
     height: 22px;
 }
 
-.resume-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: var(--text-bright);
-    text-decoration: none;
-    padding: 0.6rem 1.2rem;
-    border: 1px solid var(--card-border);
-    border-radius: 8px;
-    transition: border-color 0.2s, color 0.2s, background 0.2s;
-}
-
-.resume-link svg {
-    width: 14px;
-    height: 14px;
-    transition: transform 0.2s;
-}
-
-.resume-link:hover {
-    color: var(--accent);
-    border-color: rgba(94, 234, 212, 0.4);
-    background: var(--accent-dim);
-}
-
-.resume-link:hover svg {
-    transform: translate(2px, -2px);
-}
-
 /* =====================
    CONTENT PANELS
    ===================== */
@@ -412,27 +382,6 @@ a {
     background: var(--pill-bg);
     padding: 0.3rem 0.75rem;
     border-radius: 999px;
-}
-
-.inline-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    margin-top: 1.5rem;
-    margin-left: 1.5rem;
-    font-weight: 600;
-    font-size: 0.95rem;
-    color: var(--text-bright);
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
-.inline-link:hover {
-    color: var(--accent);
-}
-
-.inline-link:hover .ext-arrow {
-    transform: translate(3px, -3px);
 }
 
 /* =====================
@@ -664,10 +613,6 @@ a {
 
     .achievement-list {
         padding: 0;
-    }
-
-    .inline-link {
-        margin-left: 1rem;
     }
 
     .identity h1 {
